@@ -116,6 +116,20 @@ Blocking traffic to 10.0.0.2
 
 <img width="1072" height="507" alt="image" src="https://github.com/user-attachments/assets/257e4ddb-18a5-4107-9b1d-8a6b5f1dbeb5" />
 
+##  Performance Analysis
+### Throughput Measurement (iperf)
+
+Command:
+h2 iperf -s &
+h1 iperf -c 10.0.0.2
+
+Result:
+~2.40 Mbits/sec
+
+Observation:
+The throughput represents the data transfer rate between hosts under SDN controller management. It depends on flow rules and network configuration.
+<img width="816" height="585" alt="image" src="https://github.com/user-attachments/assets/93c4887a-0788-4fb5-aa15-981dc4d567d5" />
+
 
 ---
 
