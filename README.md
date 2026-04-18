@@ -122,18 +122,31 @@ cd ~/pox
 ./pox.py log.level --DEBUG path_tracer
 ```
 2. Run the custom topology
+3.
+   ```bash
    sudo mn --custom ~/mytopo.py --topo mytopo --controller=remote,ip=127.0.0.1,port=6633
+   ```
 Testing
 Test connectivity:
+```bash
 pingall
+```
 Test cross-switch communication:
+```bash
 h1 ping h4
+```
 
 Blocking Scenario
 
-1../pox.py log.level --DEBUG path_tracer_block
-2.h1 ping h2   # Blocked
+1.
+```bash
+./pox.py log.level --DEBUG path_tracer_block
+```
+2.
+```bash
+h1 ping h2   # Blocked
 h1 ping h4   # Allowed
+```
 
 ##📸 Proof of Execution
 
