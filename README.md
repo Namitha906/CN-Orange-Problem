@@ -95,10 +95,47 @@ Blocking traffic to 10.0.0.2
 * Successful communication in normal scenario
 * Blocked traffic in filtering scenario
 * Flow rules applied dynamically
-
 ---
 
-## 📸 Proof of Execution
+## Extended Topology (Multi-Switch, Multi-Host)
+
+To demonstrate scalability, a custom topology with two switches and four hosts was implemented.
+
+### Topology Diagram
+
+h1    h2        h3    h4
+ |     |         |     |
+ s1 ----------- s2
+
+### Description
+
+- Two switches: s1 and s2  
+- Four hosts: h1, h2 connected to s1 and h3, h4 connected to s2  
+- Switches are interconnected (s1 ↔ s2)  
+- Enables multi-hop communication across switches  
+
+### How to Run
+
+1. Start the controller:
+```bash
+cd ~/pox
+./pox.py log.level --DEBUG path_tracer
+```
+2. Run the custom topology
+   sudo mn --custom ~/mytopo.py --topo mytopo --controller=remote,ip=127.0.0.1,port=6633
+Testing
+Test connectivity:
+pingall
+Test cross-switch communication:
+h1 ping h4
+
+Blocking Scenario
+
+1../pox.py log.level --DEBUG path_tracer_block
+2.h1 ping h2   # Blocked
+h1 ping h4   # Allowed
+
+##📸 Proof of Execution
 
 ### Controller Running
 <img width="1079" height="514" alt="image" src="https://github.com/user-attachments/assets/8406967d-f52b-4354-aaa4-4b1b7e62ed09" />
