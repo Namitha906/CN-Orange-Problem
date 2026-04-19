@@ -52,6 +52,12 @@ sudo mn --controller=remote,ip=127.0.0.1,port=6633
 pingall
 ```
 
+***Performance***
+```bash
+h2 iperf -s &
+h1 iperf -c 10.0.0.2
+```
+
 **Expected Result:**
 
 * All hosts communicate successfully
