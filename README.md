@@ -136,6 +136,12 @@ Test cross-switch communication:
 h1 ping h4
 ```
 
+Perfornamce:
+```bash
+h4 iperf -s &
+h1 iperf -c 10.0.0.4
+```
+
 Blocking Scenario
 
 1.
@@ -147,6 +153,8 @@ Blocking Scenario
 h1 ping h2   # Blocked
 h1 ping h4   # Allowed
 ```
+
+
 
 ##📸 Proof of Execution
 
