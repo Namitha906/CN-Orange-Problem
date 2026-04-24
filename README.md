@@ -162,7 +162,7 @@ h1 ping h4   # Allowed
 
 
 
-##Proof of Execution
+## Proof of Execution
 
 ### Controller Running
 <img width="1079" height="514" alt="image" src="https://github.com/user-attachments/assets/8406967d-f52b-4354-aaa4-4b1b7e62ed09" />
