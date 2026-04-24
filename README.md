@@ -197,7 +197,7 @@ The throughput represents the data transfer rate between hosts under SDN control
 
 ## Extended topology
 1) Normal Scenario
-<img width="818" height="579" alt="image" src="https://github.com/user-attachments/assets/3ce12673-16e3-457d-b333-ec65175b7c4a" />
+
 
 
 <img width="835" height="604" alt="image" src="https://github.com/user-attachments/assets/39cf7148-3137-45b7-9e33-cc74f2a7c0be" />
