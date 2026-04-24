@@ -197,10 +197,11 @@ The throughput represents the data transfer rate between hosts under SDN control
 
 ## Extended topology
 1) Normal Scenario
+<img width="819" height="581" alt="image" src="https://github.com/user-attachments/assets/ee6cdb51-2f0b-4bd3-9d82-b04310f7a39a" />
 
 
 
-<img width="835" height="604" alt="image" src="https://github.com/user-attachments/assets/39cf7148-3137-45b7-9e33-cc74f2a7c0be" />
+
 
 # for h1 ping h4
 
