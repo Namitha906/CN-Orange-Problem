@@ -1,13 +1,13 @@
 # CN-Orange-Problem
 # SDN-Based Path Tracing Tool
 
-## 📌 Problem Statement
+##  Problem Statement
 
 The objective of this project is to design and implement a Software Defined Networking (SDN) based system that can trace the path of packets in a network and apply flow-based filtering using a centralized controller.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 * To simulate a network using Mininet
 * To implement an SDN controller using POX
@@ -16,7 +16,7 @@ The objective of this project is to design and implement a Software Defined Netw
 
 ---
 
-## 🛠️ Tools & Technologies Used
+##  Tools & Technologies Used
 
 * **Mininet** (Network Emulator)
 * **POX Controller** (SDN Controller)
@@ -25,7 +25,7 @@ The objective of this project is to design and implement a Software Defined Netw
 
 ---
 
-## ⚙️ Setup & Execution Steps
+## Setup & Execution Steps
 
 ### 1. Start the POX Controller
 
@@ -42,9 +42,9 @@ sudo mn --controller=remote,ip=127.0.0.1,port=6633
 
 ---
 
-## 🧪 Test Scenarios
+## Test Scenarios
 
-### ✅ Scenario 1: Normal Communication
+###  Scenario 1: Normal Communication
 
 **Command:**
 
@@ -58,7 +58,7 @@ h2 iperf -s &
 h1 iperf -c 10.0.0.2
 ```
 
-**Expected Result:**
+**Result:**
 
 * All hosts communicate successfully
 * 0% packet loss
@@ -66,7 +66,7 @@ h1 iperf -c 10.0.0.2
 
 ---
 
-### 🔴 Scenario 2: Blocking Traffic
+### Scenario 2: Blocking Traffic
 
 **Command:**
 
@@ -85,7 +85,7 @@ Blocking traffic to 10.0.0.2
 
 ---
 
-## 🔍 Working Explanation
+##  Working Explanation
 
 * The controller listens for `PacketIn` events from switches
 * It logs packet flow (source → destination)
@@ -95,7 +95,7 @@ Blocking traffic to 10.0.0.2
 
 ---
 
-## 📊 Expected Output
+## Output
 
 * Packet logs displayed in controller
 * Successful communication in normal scenario
@@ -162,7 +162,7 @@ h1 ping h4   # Allowed
 
 
 
-##📸 Proof of Execution
+##Proof of Execution
 
 ### Controller Running
 <img width="1079" height="514" alt="image" src="https://github.com/user-attachments/assets/8406967d-f52b-4354-aaa4-4b1b7e62ed09" />
@@ -197,7 +197,7 @@ The throughput represents the data transfer rate between hosts under SDN control
 
 ---
 
-## 📚 References
+##  References
 
 * https://mininet.org
 * https://github.com/noxrepo/pox
